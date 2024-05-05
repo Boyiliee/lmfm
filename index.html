@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>Large Multimodal Foundation Models</title>
+        <link rel="stylesheet" href="assets/css/Highlight-Clean.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/bulma.min.css">
+        <script type="module"
+            src="https://unpkg.com/@google/model-viewer@2.0.1/dist/model-viewer.min.js"></script>
+        <link rel="manifest" href="site.webmanifest">
+
+        <meta property="og:site_name" content="VLADR" />
+        <meta property="og:type" content="video.other" />
+        <meta property="og:title"
+            content="Large Multimodal Foundation Models" />
+        <meta property="og:description"
+            content="ECCV2024 Tutorial: Large Multimodal Foundation Models." />
+        <script type="module"
+            src="https://unpkg.com/@google/model-viewer@2.0.1/dist/model-viewer.min.js"></script>
+
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/codemirror.min.css">
+        <link rel="stylesheet" href="assets/css/app.css">
+
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/codemirror.min.js"></script>
+        <script src="assets/js/clipboard.min.js"></script>
+        <script src="assets/js/video_comparison.js"></script>
+        <script src="assets/js/app.js"></script>
+
+        <style>
+        .min-size-card {
+            min-height: 230px;
+            min-width: 215px;
+        }
+    </style>
+
+    </head>
+    <div>
+
+        <div class="highlight-clean" style="padding-bottom: 10px;">
+            <div class="container" style="max-width: 768px;">
+                <div class="row" id="title-row"
+                    style="max-width: 100%; margin: 0 auto; display: inline-block">
+                    <h1 class="col-md-12 text-center" id="title">
+                        <b>Large Multimodal Foundation Models</b> 
+                        <h3 class="col-md-12 text-center">
+                            ECCV 2024 Tutorial, Milan, Italy <br>
+                        </h3>
+                    </h1>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <ul class="nav nav-pills nav-justified">
+                            <li>
+                                <a href="#title">
+                                    <h4><strong>Home</strong></h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#organizers">
+                                    <h4><strong>Organizers</strong></h4>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#schedule">
+                                    <h4><strong>Schedule</strong></h4>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="max-width: 768px;">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Overview</h2>
+                    <p class="text-justify">
+
+                        The current discourse on technological progress underscores the interconnected roles of large multimodal foundation models. The necessity for this integration becomes evident when considering the complex dynamics of real-world environments. For instance, an autonomous vehicle in urban settings should not rely solely on visual sensors for pedestrian detection but must also proficiently interpret and respond to auditory signals, such as vocalized warnings. Similarly, the amalgamation of visual data with linguistic context in robots promises more adaptive functionalities, especially in diverse settings. Acknowledging the rapid expansion of this field, the tutorial agenda will encompass the introduction of history, applications, and future directions tailored for multimodal learning. Addressing privacy concerns related to multimodal data and equally vital safety discussions will ensure that systems adeptly interpret and act upon both visual and linguistic inputs, minimizing potential mishaps in real-world scenarios.
+                        <br>
+                        <br>
+                        Through a comprehensive examination of these topics, this tutorial seeks to foster a deeper academic understanding of the intersection among vision, language as well as other modalities within the context of large multimodal foundation models. By convening experts from interdisciplinary fields, our objective is to decipher current state-of-the-art methodologies, address challenges, and chart avenues for future endeavors in large multimodal foundation model research, ensuring our findings resonate within both academic and industrial communities.
+
+
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <div class="container" style="max-width: 768px;">
+            <hr class="divider" />
+            <div class="row">
+                <h2 id="organizers">Organizers</h2><br>
+                <div class="columns is-centered">
+                    <div
+                        class="column col-md-3 col-sm-3 col-xs-4 text-center center-block">
+                        <a href="https://sites.google.com/site/boyilics/home/">
+                            <div class="card min-size-card">
+                                <div class="card-image">
+                                    <figure class="image">
+                                        <img class="is-rounded"
+                                            src="assets/images/organizers/boyi.png"
+                                            alt="Boyi Li"
+                                            style="max-width: 150px; max-height: 150px;  margin: auto;">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <div class="media">
+                                        <div class="media-content"
+                                            style="overflow-x: unset;">
+                                            <p class="title is-3">Boyi Li</p>
+                                            <p class="subtitle is-5">UC Berkeley&Nvidia</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div
+                        class="column col-md-3 col-sm-3 col-xs-4 text-center center-block">
+                        <a href="https://people.eecs.berkeley.edu/~sanjayss/">
+                            <div class="card min-size-card">
+                                <div class="card-image">
+                                    <figure class="image">
+                                        <img class="is-rounded"
+                                            src="assets/images/organizers/sanjay.png"
+                                            alt="Sanjay Subramanian"
+                                            style="max-width: 150px; max-height: 150px;  margin: auto;">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <div class="media">
+                                        <div class="media-content"
+                                            style="overflow-x: unset;">
+                                            <p class="title is-3">Sanjay Subramanian</p>
+                                            <p class="subtitle is-5">UC Berkeley</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                
+                    <div
+                        class="column col-md-3 col-sm-3 col-xs-4 text-center center-block">
+                        <a href="https://www.sainingxie.com/">
+                            <div class="card min-size-card">
+                                <div class="card-image">
+                                    <figure class="image">
+                                        <img class="is-rounded"
+                                            src="assets/images/organizers/saining.png"
+                                            alt="Saining Xie"
+                                            style="max-width: 150px; max-height: 150px;  margin: auto;">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <div class="media">
+                                        <div class="media-content"
+                                            style="overflow-x: unset;">
+                                            <p class="title is-3">Saining Xie</p>
+                                            <p class="subtitle is-5">NYU</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="columns is-centered">
+                    <div
+                        class="column col-md-3 col-sm-3 col-xs-4 text-center center-block">
+                        <a href="https://people.eecs.berkeley.edu/~trevor/">
+                            <div class="card min-size-card">
+                                <div class="card-image">
+                                    <figure class="image">
+                                        <img class="is-rounded"
+                                            src="assets/images/organizers/trevor.png"
+                                            alt="Trevor Darrell"
+                                            style="max-width: 150px; max-height: 150px;  margin: auto;">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <div class="media">
+                                        <div class="media-content"
+                                            style="overflow-x: unset;">
+                                            <p class="title is-3">Trevor Darrell</p>
+                                            <p class="subtitle is-5">UC Berkeley</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div
+                        class="column col-md-3 col-sm-3 col-xs-4 text-center center-block">
+                        <a href="https://people.eecs.berkeley.edu/~malik/">
+                            <div class="card min-size-card">
+                                <div class="card-image">
+                                    <figure class="image">
+                                        <img class="is-rounded"
+                                            src="assets/images/organizers/jitendra.png"
+                                            alt="Jitendra Malik"
+                                            style="max-width: 150px; max-height: 150px;  margin: auto;">
+                                    </figure>
+                                </div>
+                                <div class="card-content">
+                                    <div class="media">
+                                        <div class="media-content"
+                                            style="overflow-x: unset;">
+                                            <p class="title is-3">Jitendra Malik</p>
+                                            <p class="subtitle is-5">UC Berkeley
+                                                &
+                                                Meta</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    
+                    
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container" style="max-width: 768px;">
+            <hr class="divider" />
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 id="schedule">Schedule</h2>
+                    <div class="content">
+                        <div class="row">
+                            <div class="col">
+                                <div class="col-xs-12">
+                                    <table class="table  table-striped">
+                                        <tr>
+                                            <td>TBD</td>
+                                        </tr>
+                                        <!-- <tr>
+                                            <td>Opening remarks and welcome</td>
+                                            <td>09:00 AM - 09:15 AM</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Keynote talk (TBD)</td>
+                                            <td>09:15 AM - 09:45 AM</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Keynote talk (TBD)</td>
+                                            <td>10:15 AM - 10:45 AM</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Keynote talk (TBD)</td>
+                                            <td>11:00 AM - 11:30 AM</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Poster Session & Lunch</td>
+                                            <td>11:30 AM - 01:30 PM</td>
+                                        </tr> -->
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div
+            class="d-grid gap-2 d-md-flex justify-content-md-end d-none d-md-block">
+            <a class="btn btn-primary me-md-2" role="button" href="#title">Top</a>
+        </div>
+    </body>
+
+</html>
